@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.1-8-g78fed4e-dirty  Build Version: 1.6.8874.10797
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="humanoid6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0249999269897118 -9.62933431329799E-10 0.0182059137038033"
+        rpy="0 0 0" />
+      <mass
+        value="2.01794832946602" />
+      <inertia
+        ixx="0.00639865582150861"
+        ixy="-2.21144447010729E-09"
+        ixz="-7.58696369412074E-09"
+        iyy="0.00539489384464479"
+        iyz="-1.60404482866338E-10"
+        izz="0.00182161129792732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.025 0 0.0535044534957096"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/base_link.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.537254901960784 0.349019607843137 0.337254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.025 0 0.0535044534957096"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/base_link.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rarm_link1">
+    <inertial>
+      <origin
+        xyz="0.025 0.0948466872017927 0.0224123737314368"
+        rpy="0 0 0" />
+      <mass
+        value="0.107513313367749" />
+      <inertia
+        ixx="1.99058383172086E-05"
+        ixy="6.48567990112525E-21"
+        ixz="9.27987581122861E-21"
+        iyy="1.58034735285127E-05"
+        iyz="3.98047937455929E-23"
+        izz="2.83363881319234E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.025 0.035 0.0224123737314368"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link1.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.025 0.035 0.0224123737314368"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link1.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_shoulder_p"
+    type="continuous">
+    <origin
+      xyz="0 -0.035 0.0310920797642728"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rarm_link1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rarm_link2">
+    <inertial>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 -0.0145761174871086"
+        rpy="0 0 0" />
+      <mass
+        value="0.134223481770255" />
+      <inertia
+        ixx="3.79701729364248E-05"
+        ixy="2.97949261828277E-21"
+        ixz="-2.60090703979867E-20"
+        iyy="4.20469680208941E-05"
+        iyz="5.31023897017839E-22"
+        izz="1.34270270990965E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.0224123737314368"
+        rpy="-1.18067923593607E-30 1.07613612616013E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link2.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.0224123737314368"
+        rpy="-1.18067923593607E-30 1.07613612616013E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link2.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_shoulder_r"
+    type="continuous">
+    <origin
+      xyz="0 -0.108610109953192 0"
+      rpy="0 0 0" />
+    <parent
+      link="rarm_link1" />
+    <child
+      link="rarm_link2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="rarm_link3">
+    <inertial>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.0801292134268102"
+        rpy="0 0 0" />
+      <mass
+        value="0.0539133133677492" />
+      <inertia
+        ixx="1.53830547985901E-05"
+        ixy="-4.55192190983354E-22"
+        ixz="-4.44736711286236E-23"
+        iyy="6.95250498387524E-06"
+        iyz="-2.51017637345899E-22"
+        izz="1.22301401951793E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.113520688497346"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link3.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.113520688497346"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link3.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_shoulder_y"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0911083147659097"
+      rpy="0 0 0" />
+    <parent
+      link="rarm_link2" />
+    <child
+      link="rarm_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rarm_link4">
+    <inertial>
+      <origin
+        xyz="0.0250000000000001 0.143610109953191 0.166304309262394"
+        rpy="0 0 0" />
+      <mass
+        value="0.0591834817702553" />
+      <inertia
+        ixx="8.90430135422743E-06"
+        ixy="-3.77440105414803E-21"
+        ixz="-9.82012820430286E-22"
+        iyy="4.82750626975816E-06"
+        iyz="1.0507854224065E-21"
+        izz="8.42436043242986E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0250000000000001 0.143610109953191 0.172130798450539"
+        rpy="-1.60982338570648E-15 1.06858966120171E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link4.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0250000000000001 0.143610109953191 0.172130798450539"
+        rpy="-1.60982338570648E-15 1.06858966120171E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link4.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_elbow_p"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0586101099531919"
+      rpy="0 0 0" />
+    <parent
+      link="rarm_link3" />
+    <child
+      link="rarm_link4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="rarm_link5">
+    <inertial>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.159847638145912"
+        rpy="0 0 0" />
+      <mass
+        value="0.0539133133677492" />
+      <inertia
+        ixx="6.95250498387524E-06"
+        ixy="8.39289845583379E-21"
+        ixz="1.15019438373145E-20"
+        iyy="1.53830547985901E-05"
+        iyz="-6.85713906715062E-21"
+        izz="1.22301401951793E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.193239113216448"
+        rpy="-1.72084568816899E-15 1.07613612616012E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link5.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.193239113216448"
+        rpy="-1.72084568816899E-15 1.07613612616012E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link5.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_elbow_y"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0211083147659097"
+      rpy="0 0 0" />
+    <parent
+      link="rarm_link4" />
+    <child
+      link="rarm_link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rarm_link6">
+    <inertial>
+      <origin
+        xyz="0.0250000000000001 0.143610109953192 0.215363806999679"
+        rpy="0 0 0" />
+      <mass
+        value="0.13529454728605" />
+      <inertia
+        ixx="3.02287448272062E-05"
+        ixy="-2.75499733692317E-21"
+        ixz="-8.70840324309133E-21"
+        iyy="2.58749900969606E-05"
+        iyz="-5.90194305458486E-21"
+        izz="2.22317377083392E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0250000000000001 0.143610109953191 0.25184922316964"
+        rpy="-1.82059228803766E-15 1.13797860024079E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link6.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0250000000000001 0.143610109953191 0.25184922316964"
+        rpy="-1.82059228803766E-15 1.13797860024079E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link6.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_elbow_r"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0586101099531918"
+      rpy="0 0 0" />
+    <parent
+      link="rarm_link5" />
+    <child
+      link="rarm_link6" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="rarm_link7">
+    <inertial>
+      <origin
+        xyz="0.0250000000000005 0.143610109953191 0.33311296148298"
+        rpy="0 0 0" />
+      <mass
+        value="0.0801331357688743" />
+      <inertia
+        ixx="1.14802020761367E-05"
+        ixy="-3.68362016224928E-21"
+        ixz="2.72262029374863E-22"
+        iyy="7.40340699166748E-06"
+        iyz="1.17438447236057E-22"
+        izz="9.55332808604059E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0250000000000005 0.143610109953191 0.346567647888742"
+        rpy="-1.93963768657657E-15 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link7.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0250000000000005 0.143610109953191 0.346567647888742"
+        rpy="-1.93963768657657E-15 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/rarm_link7.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_wrist_p"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0947184247191015"
+      rpy="0 0 0" />
+    <parent
+      link="rarm_link6" />
+    <child
+      link="rarm_link7" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="larm_link1">
+    <inertial>
+      <origin
+        xyz="0.025 -0.0948466872017927 0.0224123737314368"
+        rpy="0 0 0" />
+      <mass
+        value="0.107513313367749" />
+      <inertia
+        ixx="1.99058383172086E-05"
+        ixy="1.08946282427748E-20"
+        ixz="-1.11709168245928E-20"
+        iyy="1.58034735285127E-05"
+        iyz="-2.74694041121597E-21"
+        izz="2.83363881319234E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.025 -0.035 0.0224123737314368"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link1.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.025 -0.035 0.0224123737314368"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link1.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_shoulder_p"
+    type="continuous">
+    <origin
+      xyz="0 0.035 0.0310920797642728"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="larm_link1" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="larm_link2">
+    <inertial>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 -0.0145761174871086"
+        rpy="0 0 0" />
+      <mass
+        value="0.134223481770255" />
+      <inertia
+        ixx="3.79701729364248E-05"
+        ixy="7.81878299057904E-21"
+        ixz="2.1535080635762E-20"
+        iyy="4.20469680208941E-05"
+        iyz="2.3513167496537E-21"
+        izz="1.34270270990965E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.0224123737314368"
+        rpy="1.78676518025613E-16 -1.17362996168451E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link2.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.0224123737314368"
+        rpy="1.78676518025613E-16 -1.17362996168451E-15 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link2.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_shoulder_r"
+    type="continuous">
+    <origin
+      xyz="0 0.108610109953192 0"
+      rpy="0 0 0" />
+    <parent
+      link="larm_link1" />
+    <child
+      link="larm_link2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="larm_link3">
+    <inertial>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.0801292134268102"
+        rpy="0 0 0" />
+      <mass
+        value="0.0539133133677491" />
+      <inertia
+        ixx="1.53830547985901E-05"
+        ixy="7.5444895431979E-22"
+        ixz="-4.88842898421727E-23"
+        iyy="6.95250498387523E-06"
+        iyz="-8.18950246685588E-22"
+        izz="1.22301401951793E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.113520688497347"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link3.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.113520688497347"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link3.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_shoulder_y"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0911083147659097"
+      rpy="0 0 0" />
+    <parent
+      link="larm_link2" />
+    <child
+      link="larm_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="larm_link4">
+    <inertial>
+      <origin
+        xyz="0.0249999999999997 -0.143610109953192 0.166304309262393"
+        rpy="0 0 0" />
+      <mass
+        value="0.0591834817702552" />
+      <inertia
+        ixx="8.90430135422741E-06"
+        ixy="-3.32452509537704E-21"
+        ixz="7.77116709182853E-23"
+        iyy="4.82750626975815E-06"
+        iyz="-1.65486710471938E-21"
+        izz="8.42436043242985E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 0.172130798450538"
+        rpy="-1.27675647831893E-15 -1.5265566588596E-16 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link4.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 0.172130798450538"
+        rpy="-1.27675647831893E-15 -1.5265566588596E-16 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link4.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_elbow_p"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0586101099531918"
+      rpy="0 0 0" />
+    <parent
+      link="larm_link3" />
+    <child
+      link="larm_link4" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="larm_link5">
+    <inertial>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 0.159847638145911"
+        rpy="0 0 0" />
+      <mass
+        value="0.0539133133677491" />
+      <inertia
+        ixx="6.95250498387523E-06"
+        ixy="7.02793680543115E-21"
+        ixz="8.43198353697651E-22"
+        iyy="1.53830547985901E-05"
+        iyz="-3.17025566137915E-21"
+        izz="1.22301401951793E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 0.193239113216448"
+        rpy="-1.4819334766439E-15 -1.52655665885961E-16 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link5.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 0.193239113216448"
+        rpy="-1.4819334766439E-15 -1.52655665885961E-16 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link5.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_elbow_y"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0211083147659097"
+      rpy="0 0 0" />
+    <parent
+      link="larm_link4" />
+    <child
+      link="larm_link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="larm_link6">
+    <inertial>
+      <origin
+        xyz="0.0249999999999998 -0.143610109953192 0.215363806999678"
+        rpy="0 0 0" />
+      <mass
+        value="0.13529454728605" />
+      <inertia
+        ixx="3.02287448272062E-05"
+        ixy="-5.67561609588916E-21"
+        ixz="1.30204050324843E-21"
+        iyy="2.58749900969606E-05"
+        iyz="-5.90929867247353E-21"
+        izz="2.22317377083392E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0249999999999997 -0.143610109953192 0.25184922316964"
+        rpy="-1.49186218934005E-15 2.1017707942083E-17 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link6.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0249999999999997 -0.143610109953192 0.25184922316964"
+        rpy="-1.49186218934005E-15 2.1017707942083E-17 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link6.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_elbow_r"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0586101099531919"
+      rpy="0 0 0" />
+    <parent
+      link="larm_link5" />
+    <child
+      link="larm_link6" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="larm_link7">
+    <inertial>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953191 0.333112961482979"
+        rpy="0 0 0" />
+      <mass
+        value="0.0801331357688743" />
+      <inertia
+        ixx="1.14802020761367E-05"
+        ixy="-3.38692523426138E-21"
+        ixz="1.1612400666387E-21"
+        iyy="7.40340699166748E-06"
+        iyz="2.63974948663703E-21"
+        izz="9.5533280860406E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.346567647888741"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link7.3dxml" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0.0249999999999999 -0.143610109953192 0.346567647888741"
+        rpy="0 0 3.14159265358979" />
+      <geometry>
+        <mesh
+          filename="package://humanoid6/meshes/larm_link7.3dxml" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="larm_wrist_p"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0947184247191012"
+      rpy="0 0 0" />
+    <parent
+      link="larm_link6" />
+    <child
+      link="larm_link7" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
