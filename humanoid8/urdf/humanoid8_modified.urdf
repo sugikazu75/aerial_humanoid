@@ -1,0 +1,754 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="humanoid8">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0249999269897118 -9.62933431329799e-10 0.0182059137038033" rpy="0.0 -0.0 0.0"/>
+      <mass value="2.01794832946602"/>
+      <inertia ixx="0.00639865582150861" ixy="-2.21144447010643e-09" ixz="-7.58696369411945e-09" iyy="0.00539489384464479" iyz="-1.60404482887058e-10" izz="0.00182161129792732"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/base_link.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.0 0.0535044534957096" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/base_link.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.0 0.0535044534957096" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link1">
+    <inertial>
+      <origin xyz="0.025 0.0948466872017927 0.0224123737314368" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.107513313367749"/>
+      <inertia ixx="1.99058383172086e-05" ixy="6.60431505854643e-21" ixz="9.26955003715389e-21" iyy="1.58034735285127e-05" iyz="6.94505688797715e-23" izz="2.83363881319234e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link1.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.035 0.0224123737314368" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link1.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.035 0.0224123737314368" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link2">
+    <inertial>
+      <origin xyz="0.0250000000000001 0.143610109953192 -0.0145761174871086" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.134223481770255"/>
+      <inertia ixx="3.79701729364248e-05" ixy="2.89085029622034e-21" ixz="-2.60526441948325e-20" iyy="4.20469680208941e-05" iyz="7.98379839730572e-22" izz="1.34270270990965e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link2.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.0224123737314368" rpy="-1.18067923593607e-30 1.07613612616013e-15 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link2.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.0224123737314368" rpy="-1.18067923593607e-30 1.07613612616013e-15 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link3">
+    <inertial>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.0801292134268101" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0539133133677492"/>
+      <inertia ixx="1.53830547985901e-05" ixy="-2.20348646264816e-22" ixz="-8.1492500198687e-23" iyy="6.95250498387524e-06" iyz="-1.01058367143132e-21" izz="1.22301401951793e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link3.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.113520688497346" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link3.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.113520688497346" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link4">
+    <inertial>
+      <origin xyz="0.0250000000000001 0.143610109953191 0.166304309262394" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0591834817702553"/>
+      <inertia ixx="8.90430135422743e-06" ixy="-3.71027333117889e-21" ixz="-9.4180485294441e-22" iyy="4.82750626975816e-06" iyz="1.20665726908447e-21" izz="8.42436043242986e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link4.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000001 0.143610109953191 0.172130798450539" rpy="-1.60982338570648e-15 1.06858966120171e-15 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link4.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000001 0.143610109953191 0.172130798450539" rpy="-1.60982338570648e-15 1.06858966120171e-15 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link5">
+    <inertial>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.159847638145912" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0539133133677492"/>
+      <inertia ixx="6.95250498387524e-06" ixy="8.66303756379791e-21" ixz="1.26034452233699e-20" iyy="1.53830547985901e-05" iyz="-6.41094968133967e-21" izz="1.22301401951793e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link5.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.193239113216448" rpy="-1.72084568816899e-15 1.07613612616012e-15 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link5.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.193239113216448" rpy="-1.72084568816899e-15 1.07613612616012e-15 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link6">
+    <inertial>
+      <origin xyz="0.0250000000000001 0.143610109953192 0.215363806999679" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.13529454728605"/>
+      <inertia ixx="3.02287448272062e-05" ixy="-3.47360886742593e-21" ixz="-8.27031314019063e-21" iyy="2.58749900969606e-05" iyz="-6.69620591679411e-21" izz="2.22317377083392e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link6.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000001 0.143610109953191 0.25184922316964" rpy="-1.82059228803766e-15 1.13797860024079e-15 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link6.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000001 0.143610109953191 0.25184922316964" rpy="-1.82059228803766e-15 1.13797860024079e-15 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rarm_link7">
+    <inertial>
+      <origin xyz="0.0250000000000005 0.143610109953192 0.33311296148298" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0801331357688743"/>
+      <inertia ixx="1.14802020761367e-05" ixy="-3.50764541342702e-21" ixz="1.74531797583898e-22" iyy="7.40340699166748e-06" iyz="2.05055705268038e-22" izz="9.55332808604059e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link7.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000005 0.143610109953191 0.346567647888742" rpy="-1.93963768657657e-15 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rarm_link7.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000005 0.143610109953191 0.346567647888742" rpy="-1.93963768657657e-15 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link1">
+    <inertial>
+      <origin xyz="0.025 -0.0948466872017927 0.0224123737314368" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.107513313367749"/>
+      <inertia ixx="1.99058383172086e-05" ixy="1.13995939430438e-20" ixz="-1.10044857472572e-20" iyy="1.58034735285127e-05" iyz="-2.83017491336132e-21" izz="2.83363881319234e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link1.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 -0.035 0.0224123737314368" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link1.dae"/>
+      </geometry>
+      <origin xyz="0.025 -0.035 0.0224123737314368" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link2">
+    <inertial>
+      <origin xyz="0.0249999999999998 -0.143610109953192 -0.0145761174871086" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.134223481770255"/>
+      <inertia ixx="3.79701729364248e-05" ixy="7.85206998632646e-21" ixz="2.25119592893654e-20" iyy="4.20469680208941e-05" iyz="1.47416186796699e-21" izz="1.34270270990965e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link2.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.0224123737314368" rpy="1.78676518025613e-16 -1.17362996168451e-15 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link2.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.0224123737314368" rpy="1.78676518025613e-16 -1.17362996168451e-15 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link3">
+    <inertial>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.0801292134268102" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0539133133677491"/>
+      <inertia ixx="1.53830547985901e-05" ixy="7.49520621953609e-22" ixz="1.07896397788352e-22" iyy="6.95250498387523e-06" iyz="-8.40448807242626e-22" izz="1.22301401951793e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link3.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.113520688497347" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link3.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.113520688497347" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link4">
+    <inertial>
+      <origin xyz="0.0249999999999997 -0.143610109953192 0.166304309262393" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0591834817702552"/>
+      <inertia ixx="8.90430135422741e-06" ixy="-3.47677064493216e-21" ixz="7.29953817879287e-23" iyy="4.82750626975815e-06" iyz="-1.53786185314477e-21" izz="8.42436043242985e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link4.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999998 -0.143610109953192 0.172130798450538" rpy="-1.27675647831893e-15 -1.5265566588596e-16 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link4.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999998 -0.143610109953192 0.172130798450538" rpy="-1.27675647831893e-15 -1.5265566588596e-16 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link5">
+    <inertial>
+      <origin xyz="0.0249999999999998 -0.143610109953192 0.159847638145911" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0539133133677491"/>
+      <inertia ixx="6.95250498387523e-06" ixy="7.26428340397278e-21" ixz="1.91551769619405e-22" iyy="1.53830547985901e-05" iyz="-3.81236239733762e-21" izz="1.22301401951793e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link5.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999998 -0.143610109953192 0.193239113216448" rpy="-1.4819334766439e-15 -1.52655665885961e-16 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link5.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999998 -0.143610109953192 0.193239113216448" rpy="-1.4819334766439e-15 -1.52655665885961e-16 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link6">
+    <inertial>
+      <origin xyz="0.0249999999999998 -0.143610109953192 0.215363806999678" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.13529454728605"/>
+      <inertia ixx="3.02287448272062e-05" ixy="-6.00888563587821e-21" ixz="1.26614167824707e-21" iyy="2.58749900969606e-05" iyz="-4.65709679270828e-21" izz="2.22317377083392e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link6.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999997 -0.143610109953192 0.25184922316964" rpy="-1.49186218934005e-15 2.1017707942083e-17 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link6.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999997 -0.143610109953192 0.25184922316964" rpy="-1.49186218934005e-15 2.1017707942083e-17 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="larm_link7">
+    <inertial>
+      <origin xyz="0.0249999999999999 -0.143610109953191 0.333112961482979" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0801331357688743"/>
+      <inertia ixx="1.14802020761367e-05" ixy="-3.42995853457043e-21" ixz="1.08103983887345e-21" iyy="7.40340699166748e-06" iyz="2.65721455037741e-21" izz="9.5533280860406e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link7.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.346567647888741" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/larm_link7.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999999 -0.143610109953192 0.346567647888741" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link1">
+    <inertial>
+      <origin xyz="0.025 0.0297346825546115 0.179684510844538" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0416526429959776"/>
+      <inertia ixx="4.93163147104727e-06" ixy="7.06677356930079e-22" ixz="9.31907245801657e-23" iyy="2.84981354843247e-06" iyz="-7.46476946256893e-22" izz="5.3696650369054e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link1.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 -0.00125051288676282 0.179684510844538" rpy="1.45000531766025e-22 1.73472347597681e-16 -3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link1.dae"/>
+      </geometry>
+      <origin xyz="0.025 -0.00125051288676282 0.179684510844538" rpy="1.45000531766025e-22 1.73472347597681e-16 -3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link2">
+    <inertial>
+      <origin xyz="0.025 0.0495224579742717 0.136293035774002" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0539133133677492"/>
+      <inertia ixx="6.95250498387524e-06" ixy="-1.46612050010852e-21" ixz="-2.68996632261937e-21" iyy="1.53830547985901e-05" iyz="2.84416987298234e-23" izz="1.22301401951793e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link2.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.0495224579742717 0.169684510844538" rpy="-5.55111512312579e-17 -1.11022302462516e-16 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link2.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.0495224579742717 0.169684510844538" rpy="-5.55111512312579e-17 -1.11022302462516e-16 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link3">
+    <inertial>
+      <origin xyz="0.0249999999999999 0.0495224579742718 0.215481016331802" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0816945472860503"/>
+      <inertia ixx="1.72754114938729e-05" ixy="2.17046305350815e-21" ixz="1.3838308401387e-21" iyy="1.29216567636273e-05" iyz="-9.58385617783199e-24" izz="1.86584043750059e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link3.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999999 0.0495224579742718 0.22829462079773" rpy="2.15105711021124e-16 2.77555756156289e-16 -3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link3.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999999 0.0495224579742718 0.22829462079773" rpy="2.15105711021124e-16 2.77555756156289e-16 -3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link4">
+    <inertial>
+      <origin xyz="0.025 0.0495224579742717 0.226804545300445" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.15673454728605"/>
+      <inertia ixx="5.44948732450088e-05" ixy="1.00505769525618e-20" ixz="-3.05840832929168e-21" iyy="4.19875283458247e-05" iyz="1.25035355646785e-21" izz="2.36610710416726e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link4.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.0495224579742717 0.273013045516832" rpy="1.45716771982052e-16 8.32667268468866e-17 -3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link4.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.0495224579742717 0.273013045516832" rpy="1.45716771982052e-16 8.32667268468866e-17 -3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link5">
+    <inertial>
+      <origin xyz="0.0250000000000001 0.0495224579742716 0.351246054065972" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.13529454728605"/>
+      <inertia ixx="3.43055399116754e-05" ixy="2.78534482851724e-21" ixz="4.10970624756506e-22" iyy="2.17981950124913e-05" iyz="-1.12882160128729e-21" izz="2.22317377083392e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link5.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0250000000000001 0.0495224579742717 0.387731470235933" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link5.dae"/>
+      </geometry>
+      <origin xyz="0.0250000000000001 0.0495224579742717 0.387731470235933" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link6">
+    <inertial>
+      <origin xyz="0.025 0.0495224579742716 0.455583270500868" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.11385454728605"/>
+      <inertia ixx="1.64056567636273e-05" ixy="-2.93259277307243e-21" ixz="1.65514170396353e-21" iyy="2.07594114938728e-05" iyz="2.0384300008413e-21" izz="2.08024043750058e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link6.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.0495224579742716 0.482449894955035" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link6.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.0495224579742716 0.482449894955035" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="rleg_link7">
+    <inertial>
+      <origin xyz="0.025 0.0495224579742719 0.541433347397878" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.214192541053887"/>
+      <inertia ixx="6.69473069625001e-05" ixy="-5.35160006927667e-20" ixz="-1.86173291362241e-20" iyy="0.000148312629452524" iyz="-9.45489290550031e-22" izz="0.000176682692031676"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link7.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.0495224579742719 0.557168319674136" rpy="2.77555756156289e-16 1.38777878078144e-16 -3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/rleg_link7.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.0495224579742719 0.557168319674136" rpy="2.77555756156289e-16 1.38777878078144e-16 -3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link1">
+    <inertial>
+      <origin xyz="0.025 -0.0297346825546115 0.179684510844538" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0416526429959776"/>
+      <inertia ixx="4.93163147104727e-06" ixy="6.79858989381531e-23" ixz="-6.1618417811482e-24" iyy="2.84981354843246e-06" iyz="1.88638758267927e-21" izz="5.36966503690539e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link1.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 0.00125051288676281 0.179684510844538" rpy="1.54468654778149e-22 -8.67361737988404e-17 -3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link1.dae"/>
+      </geometry>
+      <origin xyz="0.025 0.00125051288676281 0.179684510844538" rpy="1.54468654778149e-22 -8.67361737988404e-17 -3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link2">
+    <inertial>
+      <origin xyz="0.025 -0.0495224579742717 0.136293035774002" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0539133133677491"/>
+      <inertia ixx="6.95250498387523e-06" ixy="-1.5939625567914e-21" ixz="3.92925987657145e-22" iyy="1.538305479859e-05" iyz="1.11810139209448e-22" izz="1.22301401951793e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link2.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 -0.0495224579742717 0.169684510844538" rpy="1.37037237867154e-17 -1.6750005881817e-16 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link2.dae"/>
+      </geometry>
+      <origin xyz="0.025 -0.0495224579742717 0.169684510844538" rpy="1.37037237867154e-17 -1.6750005881817e-16 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link3">
+    <inertial>
+      <origin xyz="0.025 -0.0495224579742717 0.215481016331802" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.0816945472860501"/>
+      <inertia ixx="1.72754114938728e-05" ixy="-5.97268126233191e-22" ixz="1.03203865242154e-21" iyy="1.29216567636273e-05" iyz="-6.77954125485471e-23" izz="1.86584043750058e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link3.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 -0.0495224579742717 0.22829462079773" rpy="5.066111568878327e-33 -1.16609700891648e-16 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link3.dae"/>
+      </geometry>
+      <origin xyz="0.025 -0.0495224579742717 0.22829462079773" rpy="5.066111568878327e-33 -1.16609700891648e-16 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link4">
+    <inertial>
+      <origin xyz="0.025 -0.0495224579742716 0.226804545300445" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.15673454728605"/>
+      <inertia ixx="5.44948732450087e-05" ixy="-3.27115779177418e-22" ixz="1.22912165054112e-20" iyy="4.19875283458247e-05" iyz="7.05056977667591e-21" izz="2.36610710416725e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link4.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 -0.0495224579742716 0.273013045516832" rpy="2.47400964065275e-16 -5.55111512312578e-17 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link4.dae"/>
+      </geometry>
+      <origin xyz="0.025 -0.0495224579742716 0.273013045516832" rpy="2.47400964065275e-16 -5.55111512312578e-17 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link5">
+    <inertial>
+      <origin xyz="0.0249999999999999 -0.0495224579742717 0.351246054065971" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.13529454728605"/>
+      <inertia ixx="3.43055399116754e-05" ixy="-6.51000939286855e-22" ixz="-1.11025303245353e-21" iyy="2.17981950124913e-05" iyz="1.23342645724828e-21" izz="2.22317377083392e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link5.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999999 -0.0495224579742717 0.387731470235933" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link5.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999999 -0.0495224579742717 0.387731470235933" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link6">
+    <inertial>
+      <origin xyz="0.0249999999999999 -0.0495224579742718 0.455583270500868" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.11385454728605"/>
+      <inertia ixx="1.64056567636273e-05" ixy="2.08340339551051e-21" ixz="4.49565262048201e-22" iyy="2.07594114938728e-05" iyz="4.84981726104498e-21" izz="2.08024043750059e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link6.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.0249999999999999 -0.0495224579742718 0.482449894955035" rpy="0.0 -0.0 3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link6.dae"/>
+      </geometry>
+      <origin xyz="0.0249999999999999 -0.0495224579742718 0.482449894955035" rpy="0.0 -0.0 3.14159265358979"/>
+    </collision>
+  </link>
+  <link name="lleg_link7">
+    <inertial>
+      <origin xyz="0.025 -0.0495224579742716 0.541433347397878" rpy="0.0 -0.0 0.0"/>
+      <mass value="0.214192541053887"/>
+      <inertia ixx="6.69473069625e-05" ixy="-8.8457272989743e-21" ixz="-1.17203447877959e-20" iyy="0.000148312629452523" iyz="2.80868959209255e-21" izz="0.000176682692031676"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link7.dae"/>
+      </geometry>
+      <material name=""/>
+      <origin xyz="0.025 -0.0495224579742715 0.557168319674136" rpy="7.21644966006352e-16 -6.40452872879851e-17 -3.14159265358979"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://humanoid8/meshes/lleg_link7.dae"/>
+      </geometry>
+      <origin xyz="0.025 -0.0495224579742715 0.557168319674136" rpy="7.21644966006352e-16 -6.40452872879851e-17 -3.14159265358979"/>
+    </collision>
+  </link>
+  <joint name="rarm_shoulder_p" type="continuous">
+    <parent link="base_link"/>
+    <child link="rarm_link1"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 -0.035 0.0310920797642728" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rarm_shoulder_r" type="continuous">
+    <parent link="rarm_link1"/>
+    <child link="rarm_link2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 -0.108610109953192 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rarm_shoulder_y" type="continuous">
+    <parent link="rarm_link2"/>
+    <child link="rarm_link3"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 -0.0911083147659097" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rarm_elbow_p" type="continuous">
+    <parent link="rarm_link3"/>
+    <child link="rarm_link4"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 0.0 -0.0586101099531919" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rarm_elbow_y" type="continuous">
+    <parent link="rarm_link4"/>
+    <child link="rarm_link5"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 -0.0211083147659097" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rarm_elbow_r" type="continuous">
+    <parent link="rarm_link5"/>
+    <child link="rarm_link6"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.0586101099531918" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rarm_wrist_p" type="continuous">
+    <parent link="rarm_link6"/>
+    <child link="rarm_link7"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.0 -0.0947184247191015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_shoulder_p" type="continuous">
+    <parent link="base_link"/>
+    <child link="larm_link1"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.035 0.0310920797642728" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_shoulder_r" type="continuous">
+    <parent link="larm_link1"/>
+    <child link="larm_link2"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.108610109953192 0.0" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_shoulder_y" type="continuous">
+    <parent link="larm_link2"/>
+    <child link="larm_link3"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 -0.0911083147659097" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_elbow_p" type="continuous">
+    <parent link="larm_link3"/>
+    <child link="larm_link4"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.0 -0.0586101099531918" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_elbow_y" type="continuous">
+    <parent link="larm_link4"/>
+    <child link="larm_link5"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 -0.0211083147659097" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_elbow_r" type="continuous">
+    <parent link="larm_link5"/>
+    <child link="larm_link6"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.0586101099531919" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="larm_wrist_p" type="continuous">
+    <parent link="larm_link6"/>
+    <child link="larm_link7"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.0 -0.0947184247191012" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_hip_p" type="continuous">
+    <parent link="base_link"/>
+    <child link="rleg_link1"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 0.00125051288676282 -0.126180057348829" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_crotch_y" type="continuous">
+    <parent link="rleg_link1"/>
+    <child link="rleg_link2"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 -0.0507729708610345 0.0100000000000001" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_crotch_r" type="continuous">
+    <parent link="rleg_link2"/>
+    <child link="rleg_link3"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.0586101099531918" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_crotch_p" type="continuous">
+    <parent link="rleg_link3"/>
+    <child link="rleg_link4"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.0 -0.0447184247191014" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_knee_p" type="continuous">
+    <parent link="rleg_link4"/>
+    <child link="rleg_link5"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.0 -0.114718424719102" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_ankle_p" type="continuous">
+    <parent link="rleg_link5"/>
+    <child link="rleg_link6"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 0.0 -0.0947184247191014" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="rleg_ankle_r" type="continuous">
+    <parent link="rleg_link6"/>
+    <child link="rleg_link7"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.0747184247191015" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_hip_p" type="continuous">
+    <parent link="base_link"/>
+    <child link="lleg_link1"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="0.0 -0.00125051288676281 -0.126180057348829" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_crotch_y" type="continuous">
+    <parent link="lleg_link1"/>
+    <child link="lleg_link2"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0507729708610345 0.01" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_crotch_r" type="continuous">
+    <parent link="lleg_link2"/>
+    <child link="lleg_link3"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.0586101099531918" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_crotch_p" type="continuous">
+    <parent link="lleg_link3"/>
+    <child link="lleg_link4"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 0.0 -0.0447184247191014" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_knee_p" type="continuous">
+    <parent link="lleg_link4"/>
+    <child link="lleg_link5"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 0.0 -0.114718424719101" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_ankle_p" type="continuous">
+    <parent link="lleg_link5"/>
+    <child link="lleg_link6"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="0.0 0.0 -0.0947184247191019" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <joint name="lleg_ankle_r" type="continuous">
+    <parent link="lleg_link6"/>
+    <child link="lleg_link7"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 -0.0747184247191013" rpy="0.0 -0.0 0.0"/>
+  </joint>
+  <material name="">
+    <color rgba="0.5372549  0.34901961 0.3372549  1.        "/>
+  </material>
+</robot>
