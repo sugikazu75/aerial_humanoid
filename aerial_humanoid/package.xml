@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aerial_humanoid</name>
+  <version>0.0.0</version>
+  <description>The aerial_humanoid package</description>
+
+  <maintainer email="sugihara@jsk.imi.i.u-tokyo.ac.jp">Kazuki Sugihara</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python-is-python3</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
