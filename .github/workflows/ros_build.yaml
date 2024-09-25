@@ -1,0 +1,38 @@
+on: [push, pull_request]
+
+jobs:
+  ci:
+    runs-on: ubuntu-20.04
+    name: ros_build_test
+
+    env:
+      CATKIN_WS: /home/runner/work/catkin_ws
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup ROS
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl gnupg2 lsb-release
+        curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+        sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+        sudo apt-get update
+        sudo apt-get install -y ros-noetic-desktop-full
+        sudo apt-get install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+        source /opt/ros/noetic/setup.bash
+        sudo rosdep init
+        rosdep update
+
+    - name: Install additional ROS tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-catkin-tools
+
+    - name: Setup ROS workspace
+      run: |
+        source /opt/ros/noetic/setup.bash
+        mkdir -p ${CATKIN_WS}/src && cd ${CATKIN_WS}
+        cp -r ${GITHUB_WORKSPACE} ${CATKIN_WS}/src
+        rosdep install --from-paths src --ignore-src -r -q -y --rosdistro ${ROS_DISTRO}
+        catkin build
